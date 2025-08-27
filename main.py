@@ -1434,7 +1434,7 @@ async def surah_list(update: Update, context: ContextTypes.DEFAULT_TYPE):
         start_idx = (page - 1) * surahs_per_page
         end_idx = min(start_idx + surahs_per_page, len(SURAH_NAMES))
 
-        message = f"📜 সূরার লিস্ট\nক্বারীর নাম:**{qari['name_bn']}**| Page: {page}/{total_pages}\n\n"
+        message = f"📜 সূরার লিস্ট\nক্বারীর নাম:{qari['name_bn']}| Page: {page}/{total_pages}\n\n"
         keyboard = []
         current_row = []
 
